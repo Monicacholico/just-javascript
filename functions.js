@@ -115,3 +115,55 @@ console.log(isTwo(random));
  }
 
  console.log(applyDiscount(300, .40));
+
+
+ function fibo(n) {
+   let arr = [0, 1];
+   for ( let i = 2; i < n + 1; i++) {
+      console.log(arr);
+      arr.push(arr[i - 2] + arr[i - 1])
+           console.log(arr[i - 2]);
+            console.log(arr[i -1]);
+            console.log(arr[i]);
+      }
+      return arr;
+ }
+
+
+ console.log(fibo(10));
+
+// function fib(n){
+//    let arr = [0, 1];
+//    for (let i = 2; i < n + 1; i++){
+//      arr.push(arr[i - 2] + arr[i -1])
+//      console.log(arr[i - 2]);
+//      console.log(arr[i -1]);
+//      console.log(arr[i]);
+//    }
+//   return arr[n]
+//  }
+
+//  const resfib = fib(10);
+//  console.log({resfib});
+
+
+
+function fib(n) {
+   let myArr = [0, 1];
+   for ( let i = 2; i < n + 1; i++) {
+      myArr.push(myArr[i - 2] + myArr[i - 1])
+   }
+   return myArr;
+}
+
+console.log(fib(6));
+
+function refibo(n) {
+   let fiboarr = [0,1];
+   for(let i = 2; i < n + 1; i++) {
+      fiboarr.push(fiboarr[i - 2] + fiboarr[ i - 1]);
+   }
+   return fiboarr;
+}
+
+console.log(refibo(12));
