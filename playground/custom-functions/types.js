@@ -31,7 +31,7 @@ let dog;
 console.log(dog);
 dog = 'snickers';
 
-const somethingUndefined;
+// const somethingUndefined;
 const somethingNull = null;
 
 const cher = {
@@ -46,3 +46,28 @@ const teller = {
 teller.first = 'Teller';
 teller.last = null;
 
+
+let isDrawing = false;
+let ageBool = 18;
+const ofAge = ageBool > 19;
+console.log(ofAge);
+
+ageBool = 100;
+
+let age2 = 100;
+
+let mayor = Math.max(50,40);
+console.log(mayor);
+
+let thisOne = Math.floor( 2.444);
+console.log(thisOne);
+
+
+let talkinDAte = Date.now();
+let talkingToday = new Date;
+console.log(talkingToday.toDateString());
+console.log(talkingToday.toLocaleDateString());
+
+let talkinLocation = document.location;
+
+console.log(talkinLocation);
