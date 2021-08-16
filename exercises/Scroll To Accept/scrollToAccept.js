@@ -9,7 +9,11 @@ function obCallback(payload) {
    if(payload[0].intersectionRatio === 1) {
       button.disabled = false;
       console.log('REMOVING DISABLE')
-   };
+    //   ob.unobserve(terms.lastElementChild);
+   } 
+   else {
+       button.disabled = true;
+   }
 }
 
 const ob = new IntersectionObserver(obCallback, {
