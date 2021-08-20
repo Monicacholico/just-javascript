@@ -13,7 +13,7 @@
 // };
 
 /* eslint-disable */
-const inchToCM = inches => inches * 2.54;
+// const inchToCM = inches => inches * 2.54;
 
 // function add(a, b = 3) {
 //   const total = a + b;
@@ -76,3 +76,10 @@ button.addEventListener('click', function() {
 setTimeout(() => {
   console.log('DONE! Time to eat!');
 }, 1000);
+
+
+const inchToCM = inches => inches * 2.54;
+
+const add = (a,b = 3) => a + b;
+
+console.log(add(1,5));
