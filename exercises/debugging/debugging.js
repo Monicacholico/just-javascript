@@ -5,8 +5,13 @@ const people = [
   ];
 
   people.forEach((person, index) => {
-    console.log(person.name);
+    if(person.name === 'Wes') {
+      console.log(person.name);
+    }
   });
+
+  console.table(people);
+
 
   // Console Methods
 
@@ -24,9 +29,19 @@ const people = [
 
   // Some Setup Code
 
+function doaLotOfStuff() {
+  console.group('Doing some stuff');
+  console.log('Hey Im one');
+  console.warn('watch out');
+  console.error('hey');
+  console.groupEnd('Doing some stuff');
+}
+
   function doctorize(name) {
+    console.count('running Doctorize');
     return `Dr. ${name}`;
   }
+
 
   function greet(name) {
     doesntExist();
